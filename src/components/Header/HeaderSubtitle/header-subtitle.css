@@ -1,0 +1,11 @@
+.header-subtitle {
+    grid-area: subtitle;
+}
+
+.header-subtitle-inner {
+
+}
+
+.letter {
+    display: inline-block;
+}
