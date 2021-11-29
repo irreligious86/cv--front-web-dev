@@ -1,24 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .App {
-    /*display: grid;*/
-    /*justify-items: stretch;*/
-    /*align-items: stretch;*/
-    /*justify-content: center;*/
-    /*align-content: start;*/
-    /*justify-self: stretch;*/
-    /*align-self: center;*/
-    /*gap: 3px;*/
-    /*grid-template-columns: 3fr 200px;*/
-    /*grid-template-rows: auto;*/
-    /*grid-template-areas: "header header"*/
-	/*				 "content sidebar"*/
-	/*				 "footer footer";*/
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 0 auto;
-    max-width: 960px;
-
+    max-width: 1200px;
 }
 
 
@@ -27,6 +13,4 @@
     margin: 5px;
     padding: 10px;
     background-color: rgba(234, 233, 233, 0.93);
-    /*border: 1px solid black;*/
-    /*box-shadow: 0 0  30px -5px rgba(0, 0, 0, 0.8);*/
 }

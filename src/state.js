@@ -72,7 +72,7 @@ const state = {
 
     ],
     headerMessage: 'HeaderSubtitle message',
-    contentMessage: 'Content message',
+    contentMessage: 'FindJob message',
     sidebarMessage: 'Skills message',
     footerMessage: 'Footer message'
 }

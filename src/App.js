@@ -1,25 +1,29 @@
 import React from "react";
-import CssBaseline from '@mui/material/CssBaseline';
-import './App.css';
-import {Content} from "./components/Content/content";
-import {Footer} from "./components/Footer/footer";
-import {Header} from "./components/Header/header";
-import {Sidebar} from "./components/Sidebar/sidebar";
-import Intro from "./components/intro/intro";
+import { useContext } from "react";
+import About from "./components/About/about";
+import Contact from "./components/Contact/contact";
+import Intro from "./components/Intro/intro";
+import ProductList from "./components/ProductList/product-list";
+import Toggle from "./components/Toggle/toggle";
+import { ThemeContext } from "./context";
 
-const App = props => {
+const App = () => {
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
     return (
-        <>
-            <CssBaseline/>
-            <div className="App">
-                <Intro/>
-                {/*<Header state={props.state}/>*/}
-                {/*<Content state={props.state}/>*/}
-                {/*<Sidebar state={props.state}/>*/}
-                {/*<Footer state={props.state}/>*/}
-            </div>
-        </>
+        <div
+            style={{
+                backgroundColor: darkMode ? "#222" : "white",
+                color: darkMode && "white",
+            }}
+        >
+            <Toggle />
+            <Intro />
+            <About />
+            <ProductList />
+            <Contact />
+        </div>
     );
-}
+};
 
 export default App;
